@@ -1,0 +1,13 @@
+<configuration>
+    <!-- Definición del recurso de memoria -->
+    <property>
+        <name>yarn.resource-types.memory-mb</name>
+        <value>memory</value>
+    </property>
+
+    <!-- Definición del recurso de CPU -->
+    <property>
+        <name>yarn.resource-types.vcores</name>
+        <value>cpu</value>
+    </property>
+</configuration>

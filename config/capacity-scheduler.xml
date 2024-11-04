@@ -1,0 +1,32 @@
+<configuration>
+    <!-- Definición de las colas -->
+    <property>
+        <name>yarn.scheduler.capacity.root.queues</name>
+        <value>default</value>
+    </property>
+
+    <!-- Capacidad máxima y mínima para la cola "default" -->
+    <property>
+        <name>yarn.scheduler.capacity.root.default.capacity</name>
+        <value>100</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.capacity.root.default.maximum-capacity</name>
+        <value>100</value>
+    </property>
+
+    <!-- Habilita la preempción en YARN -->
+    <property>
+        <name>yarn.resourcemanager.scheduler.monitor.enable</name>
+        <value>true</value>
+    </property>
+    
+    <!-- Configuración de preempción para equilibrar carga -->
+    <property>
+        <name>yarn.resourcemanager.monitor.capacity.preemption.enabled</name>
+        <value>false</value>
+    </property>
+    
+    <property>
+        <name>
